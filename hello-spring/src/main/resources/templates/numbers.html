@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul th:if = "${numbers.size()}">
+        <th:block th:each = "number : ${numbers}">
+            <li th:text = "${number}"></li>
+        </th:block>
+
+    </ul>
+
+
+</body>
+</html>
